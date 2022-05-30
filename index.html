@@ -8,7 +8,7 @@
     <!-- Bootstrap Styles-->
     <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
     <link rel="stylesheet" href="resources/styles/styles.css" />
-</head>
+</head> <link rel="stylesheet" href="style.css">
 
 <body>
     <div class="container">
@@ -17,29 +17,29 @@
         <h1>Rock Paper Scissors</h1>
         <div id="welcome-screen">
             <form id="name-form">
-                    <label for="username">Liz</label>
-                    <input type="text" id="username" name="username">            
+                    <label for="username">Type Your Name: </label>
+                    <input type="text" id="username" name="username" class="form-control">            
+            
+            <button id="start-game-button" class="btn btn-primary">Start Game!</button>
             </form>
-            <button id="start-game-button">Start Game!</button>
         </div>
 
         <div id="game-screen">
             <div id="score-tally">
                 <p id="score">User: 0 v CPU:0</p>
             <form id="game-form">
-                <div>
-                    <select name="user-selection" id="user-selection">
-                        <option value="Rock"></option>
-                        <option value="Paper"></option>
-                        <option value="Scissors"></option>
+                <div class="form-group">
+                    <select name="user-selection" id="user-selection" class="custom-select">
+                        <option value="rock">Rock</option>
+                        <option value="paper">Paper</option>
+                        <option value="scissors">Scissors</option>
                     </select>
-                <button id="go-button">Go!</button>
+                <button id="go-button" class="btn btn-success">Go!</button>
                 </div>
             </form>
             <p id="game-history"></p>
             </div>
         </div>
-
     </div>
 
     <!-- Our own Scripts -->
