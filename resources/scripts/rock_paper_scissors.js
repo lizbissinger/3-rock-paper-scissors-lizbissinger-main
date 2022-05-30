@@ -31,7 +31,7 @@ class RockPaperScissors {
    * @param {string} userSelection user selection. Can only be one of the following values [`rock`, `paper`, `scissors`]
    * @param {string} cpuSelection computer selection. Can only be one of the following values [`rock`, `paper`, `scissors`]
    */
-  determineWinner(userSelection, cpuSelection){
+  determineWinner(userSelection, cpuSelection);{
 
     let result = "lose";
 
@@ -64,7 +64,7 @@ class RockPaperScissors {
    * 
    * @param {string} userSelection user selection. Can only be one of the following values [`rock`, `paper`, `scissors`]
    */
-  play(userSelection){
+  play(userSelection);{
 
     if (determineWinner(userSelection, cpuSelection)){
       this.generateCPUResponse();}
